@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CAFM">
+	<parameter name="MobileOS" value="Android"></parameter>
+	<parameter name="DeviceName" value="Samsung" />
+	<parameter name="DeviceID" value="ce031603cd39470803" />
+	<parameter name="DeviceVersion" value="8" />
+	<parameter name="ApplicationName" value="DPA" />
+	<parameter name="CountryName" value="Ukraine" />
+	<listeners>
+		<listener class-name="com.CAF.Utilities.TestListener" />
+	</listeners>
+	<test thread-count="5" name="TestCases>>>">
+		<classes>
+			<class name="com.DPA.TestPages.TestLogin_DPA" />
+			<class name="com.DPA.TestPages.TestDashBoard_DPA" />
+			<class name="com.DPA.TestPages.TestCreateDealPage_DPA" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
